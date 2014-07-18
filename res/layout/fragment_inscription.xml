@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="stateHidden" >
+
+    <TextView
+        android:id="@+id/lblInscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Inscription"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblInscription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:hint="Prénom"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtFirstName"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:textSize="14sp" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLastName"
+        android:layout_below="@+id/txtLastName"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Identifiant (Courriel)"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="171dp"
+        android:text="L&apos;inscription à LETSBOOK peut se faire à l&apos;aide de votre courriel et d&apos;un mote de passe. Vous pouvez aussi le faire par l&apos;entremise d&apos;une connexion aux réseaux Facebook et/ou Google+. Vous devez procéder à l&apos;inscription à l&apos;aide d&apos;une des trois méthodes seulement. Il sera possible ultérieurement d&apos;associer vos autres comptes de réseau social dans les paramètres de LETSBOOK."
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnInscriptionCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Annuler" />
+
+    <Button
+        android:id="@+id/btnInscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Inscription à LETSBOOK"
+        android:textSize="14sp" />
+
+</RelativeLayout>

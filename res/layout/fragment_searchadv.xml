@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lblSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="4dp"
+        android:text="Recherche Avancée"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lblTitleAdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="5dp"
+        android:layout_y="50dp"
+        android:text="Titre"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtTitleAdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="69dp"
+        android:ems="10"
+        android:hint="Titre du livre"
+        android:textSize="14sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblAuthorAdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="113dp"
+        android:text="Auteur"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtAuthorAdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="132dp"
+        android:ems="10"
+        android:hint="Auteur du livre"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblSigleAdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="167dp"
+        android:text="Sigle"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtSigleAdv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="191dp"
+        android:ems="10"
+        android:hint="Sigle du cours"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblPriceMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="228dp"
+        android:text="Prix Minimum"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtPriceMin"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="246dp"
+        android:ems="10"
+        android:hint="Prix Minimum"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lblPriceMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="173dp"
+        android:layout_y="230dp"
+        android:text="Prix Maximum"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtPriceMax"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_x="174dp"
+        android:layout_y="247dp"
+        android:ems="10"
+        android:hint="Prix Maximum" />
+
+    <Spinner
+        android:id="@+id/spStateAdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="298dp" />
+
+    <Button
+        android:id="@+id/btnSearchAdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="410dp"
+        android:text="Rechercher" />
+
+</AbsoluteLayout>

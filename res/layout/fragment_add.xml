@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/lblAddBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ajouter_un_livre"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/lblBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblAddBookTitle"
+        android:text="Titre"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtBookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblBookTitle"
+        android:ems="10"
+        android:hint="Titre du livre"
+        android:textSize="14sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBookTitle"
+        android:text="Auteur"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblBookAuthor"
+        android:ems="10"
+        android:hint="Auteur du livre"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblbookSigle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBookAuthor"
+        android:text="Sigle"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtBookSigle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblbookSigle"
+        android:layout_toLeftOf="@+id/txtBookISBN"
+        android:ems="10"
+        android:hint="Sigle du cours"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblBookISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblbookSigle"
+        android:layout_centerHorizontal="true"
+        android:text="ISBN"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtBookISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtBookSigle"
+        android:layout_alignBottom="@+id/txtBookSigle"
+        android:layout_alignLeft="@+id/lblBookISBN"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Code Barre"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblBookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBookSigle"
+        android:text="Prix désiré"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lblbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblBookPrice"
+        android:layout_alignBottom="@+id/lblBookPrice"
+        android:layout_alignLeft="@+id/txtBookISBN"
+        android:text="État du livre"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/txtBookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtBookSigle"
+        android:layout_below="@+id/lblBookPrice"
+        android:ems="10"
+        android:hint="0.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblBookTransaction"
+        android:layout_marginTop="44dp"
+        android:text="Description"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblDescription"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/lblAddBookTitle"
+        android:text="Ajouter"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btnGetBarCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Numériser Code Barre"
+        android:textSize="10sp" />
+
+    <Spinner
+        android:id="@+id/cbBookState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtBookPrice"
+        android:layout_alignLeft="@+id/lblbook"
+        android:layout_alignTop="@+id/txtBookPrice"
+        android:prompt="@id/cbBookState" />
+
+    <TextView
+        android:id="@+id/lblBookTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBookPrice"
+        android:layout_marginTop="16dp"
+        android:text="Transaction"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spStateAdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblBookTransaction"
+        android:layout_toLeftOf="@+id/cbBookState" />
+
+    <TextView
+        android:id="@+id/lblEstablishment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spStateAdv"
+        android:layout_alignLeft="@+id/cbBookState"
+        android:text="Établissement"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spStateAdv"
+        android:layout_toRightOf="@+id/spStateAdv" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mobile.letsbook.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    
+    <item 
+        android:id="@+id/itemInscription" 
+        android:visible="true" 
+        android:enabled="true" 
+        android:title="Inscription" 
+        android:orderInCategory="101" />
+    <item android:id="@+id/itemConnection" android:title="Connexion" android:visible="true" android:enabled="true"></item>
+
+</menu>

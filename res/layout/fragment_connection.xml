@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblConnectionApi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Connexion"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtLoginConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/Button01"
+        android:layout_below="@+id/lblConnectionApi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Identifiant"
+        android:textSize="16sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtPasswordConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLoginConnection"
+        android:layout_alignRight="@+id/Button01"
+        android:layout_below="@+id/txtLoginConnection"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPasswordConnection"
+        android:layout_below="@+id/txtPasswordConnection"
+        android:layout_marginTop="20dp"
+        android:text="Connexion" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnConnection"
+        android:layout_alignBottom="@+id/btnConnection"
+        android:layout_alignLeft="@+id/btnInscription"
+        android:enabled="false"
+        android:text="J&apos;ai perdu mon mot de passe" />
+
+    <Button
+        android:id="@+id/btnInscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:text="Inscription a LETSBOOK" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_out_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:text="Button" >
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/lblSociauxReseaux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="Connexion avec les reseaux sociaux"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnConnection"
+        android:layout_marginBottom="30dp"
+        android:enabled="false"
+        android:text="Sign Out" />
+
+    <Button
+        android:id="@+id/btnConnectionCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:text="Annuler" />
+
+</RelativeLayout>
